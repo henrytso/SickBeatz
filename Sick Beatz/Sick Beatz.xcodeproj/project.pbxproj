@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3821C5DE7D29EA9FB97A3DE8 /* Pods_Sick_Beatz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31ECBD4F6B31625969491CA /* Pods_Sick_Beatz.framework */; };
+		BA2B245D209E26160084A183 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B245C209E26160084A183 /* Genre.swift */; };
+		BA2B2461209E27700084A183 /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B2460209E27700084A183 /* GenreCell.swift */; };
+		BA2B2463209E38C70084A183 /* BioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B2462209E38C70084A183 /* BioView.swift */; };
+		BA2B2465209E38DC0084A183 /* TracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B2464209E38DC0084A183 /* TracksView.swift */; };
+		BA2B2467209E38E40084A183 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B2466209E38E40084A183 /* PostsView.swift */; };
+		BA2B2469209E70000084A183 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B2468209E70000084A183 /* PostCell.swift */; };
+		BA2B246B209E70430084A183 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B246A209E70430084A183 /* Post.swift */; };
+		BA2B246D209E71B40084A183 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B246C209E71B40084A183 /* User.swift */; };
+		BA2B246F209EB4780084A183 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B246E209EB4780084A183 /* Album.swift */; };
+		BA52D8052098505A00746D26 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52D8042098505A00746D26 /* ArtistViewController.swift */; };
+		BA52D8072098534000746D26 /* ArtistTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52D8062098534000746D26 /* ArtistTabBar.swift */; };
+		BA52D8092098D3D100746D26 /* ArtistTabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52D8082098D3D100746D26 /* ArtistTabBarCell.swift */; };
+		BA52D80B2098EFD600746D26 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52D80A2098EFD600746D26 /* ArtistCell.swift */; };
+		BA52D80E2098F62100746D26 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52D80D2098F62100746D26 /* Artist.swift */; };
+		BA7F8B7D20954D5700EA53F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B7C20954D5700EA53F1 /* AppDelegate.swift */; };
+		BA7F8B8520954D5700EA53F1 /* Sick_Beatz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B8320954D5700EA53F1 /* Sick_Beatz.xcdatamodeld */; };
+		BA7F8B8720954D5900EA53F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7F8B8620954D5900EA53F1 /* Assets.xcassets */; };
+		BA7F8B8A20954D5900EA53F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7F8B8820954D5900EA53F1 /* LaunchScreen.storyboard */; };
+		BA7F8B922095604C00EA53F1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B912095604C00EA53F1 /* TabBarController.swift */; };
+		BA7F8B94209560E600EA53F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B93209560E600EA53F1 /* HomeViewController.swift */; };
+		BA7F8B962095613600EA53F1 /* MyMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B952095613600EA53F1 /* MyMusicViewController.swift */; };
+		BA7F8B982095615500EA53F1 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B972095615500EA53F1 /* SocialViewController.swift */; };
+		BA7F8B9A2095616D00EA53F1 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B992095616D00EA53F1 /* DiscoverViewController.swift */; };
+		BA7F8B9C2095639B00EA53F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B9B2095639B00EA53F1 /* Network.swift */; };
+		BA7F8B9E2095653200EA53F1 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B9D2095653200EA53F1 /* Song.swift */; };
+		BA7F8BA02095671600EA53F1 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F8B9F2095671600EA53F1 /* SongCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAE452DE209D56B40065E14A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA7F8B7120954D5700EA53F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA7F8B7820954D5700EA53F1;
+			remoteInfo = "Sick Beatz";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B31ECBD4F6B31625969491CA /* Pods_Sick_Beatz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sick_Beatz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8EC4A1366E9A4EC6E02D9B4 /* Pods-Sick Beatz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sick Beatz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sick Beatz/Pods-Sick Beatz.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2B245C209E26160084A183 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		BA2B2460209E27700084A183 /* GenreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
+		BA2B2462209E38C70084A183 /* BioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioView.swift; sourceTree = "<group>"; };
+		BA2B2464209E38DC0084A183 /* TracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksView.swift; sourceTree = "<group>"; };
+		BA2B2466209E38E40084A183 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		BA2B2468209E70000084A183 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		BA2B246A209E70430084A183 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BA2B246C209E71B40084A183 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BA2B246E209EB4780084A183 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		BA52D8042098505A00746D26 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		BA52D8062098534000746D26 /* ArtistTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTabBar.swift; sourceTree = "<group>"; };
+		BA52D8082098D3D100746D26 /* ArtistTabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTabBarCell.swift; sourceTree = "<group>"; };
+		BA52D80A2098EFD600746D26 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		BA52D80D2098F62100746D26 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		BA7F8B7920954D5700EA53F1 /* Sick Beatz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sick Beatz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7F8B7C20954D5700EA53F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA7F8B8420954D5700EA53F1 /* Sick_Beatz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sick_Beatz.xcdatamodel; sourceTree = "<group>"; };
+		BA7F8B8620954D5900EA53F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA7F8B8920954D5900EA53F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA7F8B8B20954D5900EA53F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7F8B912095604C00EA53F1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BA7F8B93209560E600EA53F1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BA7F8B952095613600EA53F1 /* MyMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicViewController.swift; sourceTree = "<group>"; };
+		BA7F8B972095615500EA53F1 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		BA7F8B992095616D00EA53F1 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		BA7F8B9B2095639B00EA53F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BA7F8B9D2095653200EA53F1 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		BA7F8B9F2095671600EA53F1 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		BAE452D9209D56B40065E14A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9D878CEC32FBA01647F207 /* Pods-Sick Beatz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sick Beatz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sick Beatz/Pods-Sick Beatz.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA7F8B7620954D5700EA53F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3821C5DE7D29EA9FB97A3DE8 /* Pods_Sick_Beatz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE452D6209D56B40065E14A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44F64CC32BD2B688ADEB4030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B31ECBD4F6B31625969491CA /* Pods_Sick_Beatz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DFDC9F901476766E1491B39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8EC4A1366E9A4EC6E02D9B4 /* Pods-Sick Beatz.debug.xcconfig */,
+				DF9D878CEC32FBA01647F207 /* Pods-Sick Beatz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA2FA7E0209B93FE00905BDA /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F8B992095616D00EA53F1 /* DiscoverViewController.swift */,
+				BA2B245C209E26160084A183 /* Genre.swift */,
+				BA2B2460209E27700084A183 /* GenreCell.swift */,
+				BA52D80A2098EFD600746D26 /* ArtistCell.swift */,
+				BAE452CD209D365D0065E14A /* ArtistVC */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		BA7F8B7020954D5700EA53F1 = {
+			isa = PBXGroup;
+			children = (
+				BA7F8B7B20954D5700EA53F1 /* Sick Beatz */,
+				BA7F8B7A20954D5700EA53F1 /* Products */,
+				8DFDC9F901476766E1491B39 /* Pods */,
+				44F64CC32BD2B688ADEB4030 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA7F8B7A20954D5700EA53F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F8B7920954D5700EA53F1 /* Sick Beatz.app */,
+				BAE452D9209D56B40065E14A /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA7F8B7B20954D5700EA53F1 /* Sick Beatz */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F8B7C20954D5700EA53F1 /* AppDelegate.swift */,
+				BA7F8B9B2095639B00EA53F1 /* Network.swift */,
+				BA7F8B912095604C00EA53F1 /* TabBarController.swift */,
+				BA7F8B93209560E600EA53F1 /* HomeViewController.swift */,
+				BA7F8B952095613600EA53F1 /* MyMusicViewController.swift */,
+				BA7F8B972095615500EA53F1 /* SocialViewController.swift */,
+				BA2FA7E0209B93FE00905BDA /* Discover */,
+				BA52D80D2098F62100746D26 /* Artist.swift */,
+				BA7F8B9D2095653200EA53F1 /* Song.swift */,
+				BA2B246E209EB4780084A183 /* Album.swift */,
+				BA7F8B9F2095671600EA53F1 /* SongCell.swift */,
+				BA2B246A209E70430084A183 /* Post.swift */,
+				BA2B2468209E70000084A183 /* PostCell.swift */,
+				BA2B246C209E71B40084A183 /* User.swift */,
+				BA7F8B8620954D5900EA53F1 /* Assets.xcassets */,
+				BA7F8B8820954D5900EA53F1 /* LaunchScreen.storyboard */,
+				BA7F8B8B20954D5900EA53F1 /* Info.plist */,
+				BA7F8B8320954D5700EA53F1 /* Sick_Beatz.xcdatamodeld */,
+			);
+			path = "Sick Beatz";
+			sourceTree = "<group>";
+		};
+		BAE452CD209D365D0065E14A /* ArtistVC */ = {
+			isa = PBXGroup;
+			children = (
+				BA52D8042098505A00746D26 /* ArtistViewController.swift */,
+				BA52D8062098534000746D26 /* ArtistTabBar.swift */,
+				BA52D8082098D3D100746D26 /* ArtistTabBarCell.swift */,
+				BA2B2462209E38C70084A183 /* BioView.swift */,
+				BA2B2464209E38DC0084A183 /* TracksView.swift */,
+				BA2B2466209E38E40084A183 /* PostsView.swift */,
+			);
+			path = ArtistVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA7F8B7820954D5700EA53F1 /* Sick Beatz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7F8B8E20954D5900EA53F1 /* Build configuration list for PBXNativeTarget "Sick Beatz" */;
+			buildPhases = (
+				9228FDEE6607EBE0E94D35FC /* [CP] Check Pods Manifest.lock */,
+				BA7F8B7520954D5700EA53F1 /* Sources */,
+				BA7F8B7620954D5700EA53F1 /* Frameworks */,
+				BA7F8B7720954D5700EA53F1 /* Resources */,
+				FC0A1904914082E12898287C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sick Beatz";
+			productName = "Sick Beatz";
+			productReference = BA7F8B7920954D5700EA53F1 /* Sick Beatz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAE452D8209D56B40065E14A /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE452E0209D56B40065E14A /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				BAE452D5209D56B40065E14A /* Sources */,
+				BAE452D6209D56B40065E14A /* Frameworks */,
+				BAE452D7209D56B40065E14A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAE452DF209D56B40065E14A /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = BAE452D9209D56B40065E14A /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA7F8B7120954D5700EA53F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Henry Tso";
+				TargetAttributes = {
+					BA7F8B7820954D5700EA53F1 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					BAE452D8209D56B40065E14A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = BA7F8B7820954D5700EA53F1;
+					};
+				};
+			};
+			buildConfigurationList = BA7F8B7420954D5700EA53F1 /* Build configuration list for PBXProject "Sick Beatz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA7F8B7020954D5700EA53F1;
+			productRefGroup = BA7F8B7A20954D5700EA53F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA7F8B7820954D5700EA53F1 /* Sick Beatz */,
+				BAE452D8209D56B40065E14A /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA7F8B7720954D5700EA53F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7F8B8A20954D5900EA53F1 /* LaunchScreen.storyboard in Resources */,
+				BA7F8B8720954D5900EA53F1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE452D7209D56B40065E14A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9228FDEE6607EBE0E94D35FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sick Beatz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0A1904914082E12898287C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sick Beatz/Pods-Sick Beatz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sick Beatz/Pods-Sick Beatz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA7F8B7520954D5700EA53F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7F8B94209560E600EA53F1 /* HomeViewController.swift in Sources */,
+				BA7F8B962095613600EA53F1 /* MyMusicViewController.swift in Sources */,
+				BA52D80B2098EFD600746D26 /* ArtistCell.swift in Sources */,
+				BA2B246D209E71B40084A183 /* User.swift in Sources */,
+				BA2B246B209E70430084A183 /* Post.swift in Sources */,
+				BA52D8072098534000746D26 /* ArtistTabBar.swift in Sources */,
+				BA7F8B982095615500EA53F1 /* SocialViewController.swift in Sources */,
+				BA7F8B8520954D5700EA53F1 /* Sick_Beatz.xcdatamodeld in Sources */,
+				BA7F8B9E2095653200EA53F1 /* Song.swift in Sources */,
+				BA7F8B922095604C00EA53F1 /* TabBarController.swift in Sources */,
+				BA52D8052098505A00746D26 /* ArtistViewController.swift in Sources */,
+				BA2B2463209E38C70084A183 /* BioView.swift in Sources */,
+				BA2B245D209E26160084A183 /* Genre.swift in Sources */,
+				BA7F8B9C2095639B00EA53F1 /* Network.swift in Sources */,
+				BA7F8B9A2095616D00EA53F1 /* DiscoverViewController.swift in Sources */,
+				BA52D8092098D3D100746D26 /* ArtistTabBarCell.swift in Sources */,
+				BA7F8BA02095671600EA53F1 /* SongCell.swift in Sources */,
+				BA52D80E2098F62100746D26 /* Artist.swift in Sources */,
+				BA7F8B7D20954D5700EA53F1 /* AppDelegate.swift in Sources */,
+				BA2B2461209E27700084A183 /* GenreCell.swift in Sources */,
+				BA2B2467209E38E40084A183 /* PostsView.swift in Sources */,
+				BA2B2469209E70000084A183 /* PostCell.swift in Sources */,
+				BA2B2465209E38DC0084A183 /* TracksView.swift in Sources */,
+				BA2B246F209EB4780084A183 /* Album.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE452D5209D56B40065E14A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAE452DF209D56B40065E14A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA7F8B7820954D5700EA53F1 /* Sick Beatz */;
+			targetProxy = BAE452DE209D56B40065E14A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA7F8B8820954D5900EA53F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7F8B8920954D5900EA53F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA7F8B8C20954D5900EA53F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA7F8B8D20954D5900EA53F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA7F8B8F20954D5900EA53F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8EC4A1366E9A4EC6E02D9B4 /* Pods-Sick Beatz.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
+				INFOPLIST_FILE = "Sick Beatz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tso.Sick-Beatz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA7F8B9020954D5900EA53F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9D878CEC32FBA01647F207 /* Pods-Sick Beatz.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
+				INFOPLIST_FILE = "Sick Beatz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tso.Sick-Beatz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAE452E1209D56B40065E14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tso.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sick Beatz.app/Sick Beatz";
+			};
+			name = Debug;
+		};
+		BAE452E2209D56B40065E14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tso.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sick Beatz.app/Sick Beatz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA7F8B7420954D5700EA53F1 /* Build configuration list for PBXProject "Sick Beatz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7F8B8C20954D5900EA53F1 /* Debug */,
+				BA7F8B8D20954D5900EA53F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA7F8B8E20954D5900EA53F1 /* Build configuration list for PBXNativeTarget "Sick Beatz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7F8B8F20954D5900EA53F1 /* Debug */,
+				BA7F8B9020954D5900EA53F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE452E0209D56B40065E14A /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE452E1209D56B40065E14A /* Debug */,
+				BAE452E2209D56B40065E14A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA7F8B8320954D5700EA53F1 /* Sick_Beatz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA7F8B8420954D5700EA53F1 /* Sick_Beatz.xcdatamodel */,
+			);
+			currentVersion = BA7F8B8420954D5700EA53F1 /* Sick_Beatz.xcdatamodel */;
+			path = Sick_Beatz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA7F8B7120954D5700EA53F1 /* Project object */;
+}
